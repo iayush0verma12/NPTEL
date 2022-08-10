@@ -1,0 +1,38 @@
+1-c
+2-a
+3-b
+4-a
+5-b
+6-c
+7-c
+8-d
+9-b,c
+10-d
+
+A1
+l=[]
+for i in L:
+  if(i%5==0 and i%7==0):
+    l.append(i)
+  else:
+    if(i%5==0):
+      l.append(i)
+    else:
+      if(i%7==0):
+        l.append(i)
+l.sort()
+print(l)
+    A2
+def rev(L,n):
+  rev_sort=list(reversed(sorted(L)))
+  l=[]
+  for i in rev_sort[:n]:
+    l.append(i)
+  print(l,end="")
+
+A3
+l=[]
+for i in L:
+  if(i%2!=0):
+    l.append(i)
+print(len(l),end="")
