@@ -1,0 +1,59 @@
+#WEEK 4
+
+1- a,d
+2- c
+3-a
+4-c
+5-a
+6-d
+7-c
+8-b
+9-d
+10-c
+
+#Assignment1
+N=int(input())
+K=int(input())
+L=[]
+for i in range(N):
+  L.append(0)
+  
+
+
+for i in range(N):
+    if(K%2==0):
+        if(i%2==0):
+            L[i]=1
+        else:
+            L[i]=0
+    else:
+         if(i%2!=0):
+            L[i]=1
+         else:
+            L[i]=0        
+print(L,end="")
+
+
+#Assignment-2
+
+S=input()
+v=list('aeiou')
+a=""
+for i in S:
+    if i.lower() in v:
+        a=a+'*'
+    else:
+        a=a+i
+print(a,end="")
+
+#Assignment-3
+
+N=int(input())
+for i in range(N):
+    for j in range(i+1):
+        print("* ",end="")
+    print()
+for i in range(N-1,0,-1):
+    for j in range(i):
+        print("* ",end="")
+    print()
