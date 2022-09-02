@@ -1,0 +1,41 @@
+#A1
+def count_letters(S):
+  myList=[]
+  for letters in S:
+    myList.append(letters)
+  frequencyDict = dict()
+  visited = set()
+  for element in myList:
+    if element in visited:
+        frequencyDict[element] = frequencyDict[element] + 1
+    else:
+        frequencyDict[element] = 1
+        visited.add(element)
+  return frequencyDict
+#A2
+def uniqueE(L):
+  L.sort()
+  for i in L:
+    if L.count(i) > 1:
+       while i in L:
+          L.remove(i)
+  return L
+    
+#A3
+def isprime(n):
+    if n<=1:
+        return False
+    if n==2:
+        return True
+
+    for i in range(3,n-1):
+        if n%i == 0:
+            return False
+    return True
+
+for i in L:
+    if isprime(i):
+        print(i,end="")
+        break
+    else:
+        continue
