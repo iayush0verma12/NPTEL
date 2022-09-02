@@ -1,4 +1,4 @@
-Quiz
+"""Quiz
 1.c
 2.bcd
 3.b
@@ -8,7 +8,7 @@ Quiz
 7.d
 8.a
 9.d
-10.a
+10.a"""
 
 #Assignment1
 L=[int(i) for i in input().split()]
