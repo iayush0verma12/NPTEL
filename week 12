@@ -1,0 +1,23 @@
+#QUIZWEEK12
+1-b
+2-a
+3-c
+4-b
+5-a
+6-a
+7-c
+8-a,d
+9-a
+10-a
+
+
+A1-
+print(int("".join(list(input())[::-1])),end="")
+
+A2-
+M=[i[::-1] for i in input().split()]
+print([i[::-1] for i in sorted(M)],end="")
+
+A3-
+email=input().split('@')
+print(email[0],email[1].split('.')[0],end="")
